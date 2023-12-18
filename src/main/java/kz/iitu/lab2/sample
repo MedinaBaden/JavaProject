@@ -1,0 +1,31 @@
+{
+    "name": "Buyer Name"
+},
+{
+    "name": "Product Name",
+    "price": 10.99,
+    "buyer": {
+        "id": 1
+    }
+}
+
+localhost:8080/products POST
+{
+  "product": {
+    "name": "Название продукта",
+    "price": 50.0,
+    "sold": false
+  },
+  "translations": [
+    {
+      "languageCode": "en",
+      "translatedName": "Product Name in English",
+      "translatedDescription": "Product Description in English"
+    },
+    {
+      "languageCode": "es",
+      "translatedName": "Nombre del producto en español",
+      "translatedDescription": "Descripción del producto en español"
+    }
+  ]
+}
